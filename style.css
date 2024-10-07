@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+   
+    
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .text-center{
+
+  }
+
+  
+ 
+  
+  header img {
+    max-height: 50px;
+  }
+  
+  .magic-text {
+    overflow: hidden; 
+    white-space: nowrap;
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    
+}
+h2{
+    font-size: 20px ;
+    font-weight: bold;
+    font-family: monospace;
+    text-decoration:underline;
+    
+ }
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #eeeef2;
+  color:#45a6b0;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px; 
+}
+
+#scrollToTopBtn  :hover{
+  background-color: #c2c2d3;
+  
+}
+
+
+ #home  {
+  position: relative;
+  background-image: url(Images/BackgroundAnimeBot/16.png);
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  animation: backgroundAnimation 1s linear 1;
+
+ }
+
+ @keyframes backgroundAnimation {
+  0% { background-image: url(Images/BackgroundAnimeBot/6.png); }
+  25% { background-image: url(Images/BackgroundAnimeBot/8.png);  }
+  50% { background-image: url(Images/BackgroundAnimeBot/12.png);  }
+  75% { background-image: url(Images/BackgroundAnimeBot/13.png);  }
+  100% { background-image: url(Images/BackgroundAnimeBot/16.png);  }
+}
+
+#about {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  font-size: larger;
+  background-image: url(Images/Bkgportfolio1\ \(5\).png);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.scrollable-section2{
+  
+  
+}
+
+
+#formations {
+    padding: 60px 0 ;
+  
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .card {
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+
+  }
+  .card.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#experience {
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.exp-card {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.exp-card h3 {
+  margin-top: 0;
+}
+
+.exp-card p {
+  margin: 5px 0;
+}
+.stars {
+  color: rgb(12, 109, 205);
+  font-size: 1.2em;
+}
+
+
+  
+  
+  .card:hover {
+    transform: translateY(-10px);
+   
+    background-size: cover;
+    
+  }
+  
+  .exp-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.exp-card h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.exp-card .date {
+    
+    color: #0655ff;
+   font-family: bold;
+}
+
+.exp-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.exp-card ul li {
+    margin-bottom: 5px;
+}
+
+ 
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif bold;
+    margin-bottom: 8px;
+    
+  }
+
+  .card-text {
+    font-size: 1em;
+    
+    
+  }
+
+  .footer {
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 8px 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+.col-12 :hover{
+  transform:  rotate(5deg) scale(1.05);
+
+  
+}
+
+.skill{
+ 
+  font-weight: bold;
+}
+
+
+.expériences{
+  
+  margin: 70px 30px; 
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+.Space{
+  height: 30px;
+}
+
+#expériences{
+  background-image: url(Images/Bkgportfolio2\ \(8\).png);
+  background-size: cover;
+  height: 400px;
+  margin: 10px;
+  
+
+}
+
+#contact{
+  background-color: #c2c2d356;
+  
+}
+ #form{
+  margin-left: 100px;
+}
+
+.service-section {
+  padding: 60px 0;
+}
+.service-box {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.service-box:hover {
+  transform: scale(1.05);
+}
+.service-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+.projects{
+  background-color: #333;
+}

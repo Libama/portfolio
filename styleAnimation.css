@@ -1,0 +1,77 @@
+/*Animation sur les boutons*/
+
+.btn {
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.navbar-nav .nav-item {
+    position: relative;
+}
+
+
+/* animation sur la bar de navigation */
+.navbar-nav .nav-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar-nav .nav-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.img-fluid {
+    transition: transform 0.5s ease;
+}
+
+.img-fluid:hover {
+    transform:  scale(1.05);
+    cursor: pointer;
+}
+  
+
+
+.cardSkills {
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    transform-style:flat;
+    border-radius: 30px;
+}
+
+.cardSkills:hover {
+    transform: rotateY(10deg) scale(1.05);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    transition: transform 0.6s ease;
+}
+
+
+
+.fade-in {
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+  
